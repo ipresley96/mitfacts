@@ -1,0 +1,50 @@
+<script>
+    let playerSelection = "";
+    let choices = ["rock", "paper", "scissors"];
+    let computerChoice = Math.floor(Math.random() * choices.length);
+
+
+    console.log(computerChoice)
+    console.log(playerSelection)
+
+    function gameRound(playerSelection){
+         computerChoice;
+
+             if(computerChoice === 0){
+                 if(playerSelection === "paper"){
+                    return "Player wins";
+                 }
+                 else{
+                     return "computer wins"
+                 }
+
+                 
+             }  
+             else if(computerChoice === 1){
+                 if(playerSelection === "scissors"){
+                     return "Player wins"
+                 } 
+                 else{
+                     return "computer wins"
+                 }
+                 
+             } 
+             else if(computerChoice === 2){
+                 if(playerSelection === "rock"){
+                    return "Player wins"
+                 } 
+                 else {
+                     return "computer wins"
+                 }
+             }
+         
+    }
+    console.log(gameRound("rock"))
+    console.log(gameRound("paper"))
+    console.log(gameRound("scissors"))
+    console.log(gameRound("paper"))
+    console.log(gameRound("rock"))
+
+
+
+</script>
